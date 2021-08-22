@@ -1,0 +1,59 @@
+.footer {
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #ffffff;
+    border-top: 1px solid #d8d8d8;
+    padding: 25px 100px;
+    margin-top: 10em;
+}
+
+.brand {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.created {
+    display: flex;
+    font-size: larger;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    color: gray;
+}
+
+img {
+    width: 33px;
+    margin-right: 14px;
+}
+
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+a {
+    margin: 0 10px;
+}
+
+img {
+    width: 21px;
+}
+
