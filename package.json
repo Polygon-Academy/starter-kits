@@ -1,12 +1,41 @@
 {
-  "name": "polygon_start_kit_2",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cra-template-polygon-starter-kit",
+  "version": "0.5.0",
+  "license": "MIT",
+  "author": "Lavender <vip_zhouzhenfeng@126.com>",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "template.json",
+  "description": "A quick start Create React DApp template with React Router, @web3-react, truffle etc.",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "react-router",
+    "react-router-dom",
+    "prettier"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Polygon-Academy/starter-kits.git",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/Polygon-Academy/starter-kits.git/issues"
+  },
+
   "dependencies": {
     "@ethersproject/providers": "^5.4.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@truffle/hdwallet-provider": "^1.5.0",
     "@web3-react/abstract-connector": "^6.0.7",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
