@@ -1,0 +1,13 @@
+.contentStyle {
+    margin-top: 5rem;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    /* position:relative; */
+}
+
+.walletWrapper {
+    width: 300px;
+    position: fixed;
+    right: 5rem;
+    top: 5rem;
+}
