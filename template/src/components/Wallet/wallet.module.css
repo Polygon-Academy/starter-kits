@@ -1,0 +1,13 @@
+.walletInfo {
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.walletInfo>div>p:first-of-type {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}

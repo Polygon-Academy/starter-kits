@@ -25,7 +25,7 @@ const fixedMenuStyle = {
 };
 
 
-export default class Content extends Component {
+export default class Header extends Component {
   state = {
     menuFixed: true,
   };
@@ -50,8 +50,8 @@ export default class Content extends Component {
               <Image size='small' src={logo}/>
             </Menu.Item>
             <Menu.Item header>Start-Kit</Menu.Item>
-            <Menu.Item as='a'>Docs</Menu.Item>
-            <Menu.Item as='a'>Tutorial</Menu.Item>
+            <Menu.Item as='a' link={true} href="https://docs.matic.network/docs/develop/getting-started" target="_blank">Docs</Menu.Item>
+            <Menu.Item as='a' link={true} href="https://polygon-tutorial.solidstake.net" target="_blank">Tutorial</Menu.Item>
 
             <Menu.Menu position='right'>
               <ConnectWallet/>
