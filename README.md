@@ -1,53 +1,84 @@
-<div align=center> 
-<img src="https://avatars.githubusercontent.com/u/88427645?s=200&v=4" style="border-radius:10px">
-</div>
+# Starter Kits
 
-<center> Starter Kits 快速构建 DAPP </center>
+An Polygon Starter Kit Tutorial containing React, @web3-react, Infura.
 
-<center> An Polygon Starter Kit Tutorial containing React, @web3-react, Infura. </center>
-<div align=center> <a href="https://docs.matic.network/docs/develop/getting-started"> Developer Docs</a> - <a href="https://polygon-tutorial.soildstake.net"> Tutorial </a></div>    
+# 0. Environment Setup
 
+Install fundamental environments, including node, web3, react, truffle, etc
 
+\0. Environment Setup
 
+# Install Ganache、Truffle
 
-## 0. 环境配置 
+![img](https://avatars.githubusercontent.com/u/88427645?s=200&v=4)
 
-### Requirements 
+Use Starter Kits build your DAPP right away!
 
-#### 安装 ganache 
+An Polygon Starter Kit Tutorial containing React, @web3-react, Infura.
+
+[Developer Docs](https://docs.matic.network/docs/develop/getting-started) - [Tutorial](https://polygon-tutorial.soildstake.net)
+
+#### Install ganache
+
 ```javascripts
 Download Package from https://www.trufflesuite.com/ganache
 ```
 
-#### 快速开始
+![img](https://www.trufflesuite.com/img/ganache-window.png)
+
+Ganache Screenshot
+
+------
+
+> granache is needed for dapp development on local blockchain, its capable of viewing txns informations, create workspace folder, deploy smart contracts and tracking its interface.
+
+#### Install truffle
+
+```javascripts
+npm install -g truffle 
+```
+
+> truflle is used for develop, test, and deploy smart contracts.
+>
+> More tutorials about truffle: https://learnblockchain.cn/docs/truffle/
+
+\0. Environment Setup
+
+# Create your DAPP using Starter Kits Template
+
+#### Quick Start
+
 ```javascripts
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 cd {YOUR_PROJECT_NAME}
 npm run start 
 ```
-<img src="https://cdn.rawgit.com/facebook/create-react-app/27b42ac/screencast.svg" width="600" alt="npm start">
 
-(npx 来自 npm 5.2+ 或更高版本, 查看 npm 旧版本的说明)
+![npm start](https://cdn.rawgit.com/facebook/create-react-app/27b42ac/screencast.svg)
 
-然后打开 http://localhost:3000/ 查看你的应用。
+(npx comes from npm 5.2+ or later)
 
-当你准备部署到生产环境时，使用 npm run build 创建一个压缩后的 bundle（包）。
+Then fireup your browser and go to `http://localhost:3000/` to check your application.
 
-#### 立即开始
-你 无需 安装或配置 Webpack 或 Babel 等工具。 它们是预先配置好并且隐藏的，因此你可以专注于代码。
+When you are preparing to deploy your project to production settings, use `npm run build` to create a compressed bundle and deploy.
 
-只需创建一个项目，就可以了。
+#### Immediate Configuration
 
-#### 创建应用程序
-你需要在本地开发计算机上使用 Node >= 6（但在服务器上不需要）。 你可以使用 nvm (macOS/Linux) 或 nvm-windows 轻松地在不同项目之间切换 Node 版本。
+There is no need for you to install or configurate tools like Webpack or Babel. They comes pre-configurated and hiddened, therefore you are provided with the full environment pack where you only need to worry about coding part.
 
-创建新应用程序
+Just create a project with the template, then you are good to go!
+
+#### Create Application
+
+You will need to use Node that is higher or equal to version 6 on your local computer(on server you don't have to). There is nvm(macOS/Linux) or nvm-windows to help you eaily switch between different Node versions.
+
+Create a new application
 
 ```javascripts
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 ```
 
-则会在当前目录中创建一个名为 `{YOUR_PROJECT_NAME}` 的目录。在该目录中，它将生成初始项目结构并安装依赖项：
+Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current folder location. The File structures under this new folder is as below:
 
 ```javascripts
 {YOUR_PROJECT_NAME}
@@ -65,35 +96,40 @@ npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 	├── App.js
 	├── App.test.js
 	├── assets
-	│   ├── icon-devx.svg
-	│   ├── logo512.png
-	│   └── polygon-logo.svg
+	│   ├── icon-devx.svg
+	│   ├── logo512.png
+	│   └── polygon-logo.svg
 	├── components
-	│   ├── Contents
-	│   │   └── index.js
-	│   ├── Footer
-	│   │   ├── footer.css
-	│   │   └── index.js
-	│   ├── Headers
-	│   │   └── index.js
-	│   └── Wallet
-	│       ├── ConnectWallet.js
-	│       └── WalletInfo.js
+	│   ├── Contents
+	│   │   └── index.js
+	│   ├── Footer
+	│   │   ├── footer.css
+	│   │   └── index.js
+	│   ├── Headers
+	│   │   └── index.js
+	│   └── Wallet
+	│       ├── ConnectWallet.js
+	│       └── WalletInfo.js
 	├── contracts
-	│   └── Migrations.sol
+	│   └── Migrations.sol
 	├── hooks
-	│   └── index.js
+	│   └── index.js
 	├── index.css
 	├── index.js
 	├── lib
-	│   └── connectors
-	│       └── index.js
+	│   └── connectors
+	│       └── index.js
 	├── reportWebVitals.js
 	└── setupTests.js
 └── truffle-config.js
 ```
 
-##### truffle-config.js  
+\0. Environment Setup
+
+# Truffle Environment Configuration
+
+##### truffle-config.js  
+
 ```javascripts
 const mnemonic = process.env.MNEMONIC;
 const HDWalletProvider = require("@truffle/hdwallet-provider");
@@ -103,7 +139,7 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1",
-      port: 7545,     
+      port: 8545,     
       network_id: "*" // Match any network id
     },
     polygon: {
@@ -115,26 +151,34 @@ module.exports = {
     },
     mumbai: {
       provider: new HDWalletProvider(mnemonic, process.env.POLYGON_MUMBAI_RPC),
-      network_id: 8001,
+      network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true
     }
 ```
 
- 在项目根目录下创建 `.env` 文件
- ```
- vim .env
- MNEMONIC=" {YOUR_MNEMONIC OR YOUR_PRIVATE_KEY} "
- POLYGON_RPC = " {PUBLIC_POLYGON_RPC} OR https://rpc-mainnet.matic.network"
- POLYGON_MUMBAI_RPC = " {PUBLIC_POLYGON_MUMBAI_RPC} or https://rpc-mumbai.maticvigil.com/"
- ```
- 
- 更多的 `PUBLIC_RPC` 参考：[Development Docs](https://docs.matic.network/docs/develop/network-details/network)
- 
-## 1. 项目结构
+Create `.env` File under root folder
 
-#### Polygon-Starter-Kit 目录结构如下
+```
+vim .env
+MNEMONIC=" {YOUR_MNEMONIC OR YOUR_PRIVATE_KEY} "
+POLYGON_RPC = " {PUBLIC_POLYGON_RPC} OR https://rpc-mainnet.matic.network"
+POLYGON_MUMBAI_RPC = " {PUBLIC_POLYGON_MUMBAI_RPC} or https://rpc-mumbai.maticvigil.com/"
+```
+
+More about `PUBLIC_RPC` please reference on：[Development Docs](https://docs.matic.network/docs/develop/network-details/network)
+
+# 1.Project Structure
+
+Polygon-Starter-Kit Project Template Introduction, and how to utilize different modules in it.
+
+1.Project Structure
+
+# Project Structure
+
+#### Polygon-Starter-Kit Project Structure is as below
+
 ```javascripts
 {YOUR_PROJECT_NAME}
 ├── README.md
@@ -151,38 +195,36 @@ module.exports = {
 	├── App.js
 	├── App.test.js
 	├── assets
-	│   ├── icon-devx.svg
-	│   ├── logo512.png
-	│   └── polygon-logo.svg
+	│   ├── icon-devx.svg
+	│   ├── logo512.png
+	│   └── polygon-logo.svg
 	├── components
-	│   ├── Contents
-	│   │   └── index.js
-	│   ├── Footer
-	│   │   ├── footer.css
-	│   │   └── index.js
-	│   ├── Headers
-	│   │   └── index.js
-	│   └── Wallet
-	│       ├── ConnectWallet.js
-	│       └── WalletInfo.js
+	│   ├── Contents
+	│   │   └── index.js
+	│   ├── Footer
+	│   │   ├── footer.css
+	│   │   └── index.js
+	│   ├── Headers
+	│   │   └── index.js
+	│   └── Wallet
+	│       ├── ConnectWallet.js
+	│       └── WalletInfo.js
 	├── contracts
-	│   └── Migrations.sol
+	│   └── Migrations.sol
 	├── hooks
-	│   └── index.js
+	│   └── index.js
 	├── index.css
 	├── index.js
 	├── lib
-	│   └── connectors
-	│       └── index.js
+	│   └── connectors
+	│       └── index.js
 	├── reportWebVitals.js
 	└── setupTests.js
 └── truffle-config.js
 ```
 
-其中
-
-- `migrations` 用来存放迁移、部署合约的 JS 脚本
-- `src` 客户端 DAPP 目录
-- `src/contracts` 用来存放编写的`智能合约(smart contract)`，同时 truffle 的 contract 目录指向
-- `src/abis` 用来存放 truffle 编译后的 abis 文件
-- `hooks/index.js` 初始化 `@web3-react` 中的 `Provider` 的请求钩子
+- `migrations` is used to contain JS scripts for smart contract migration and deployment
+- `src` DAPP Client source code
+- `src/contracts` For containing `smart contract`，and its also the contract location pointer in the truffle configuration
+- `src/abis` for containing abi files after Truffle Compilation
+- `hooks/index.js` initialize `Provider`‘s request hook in `@web3-react`
