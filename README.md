@@ -35,7 +35,7 @@ Ganache Screenshot
 #### Install truffle
 
 ```javascripts
-npm install -g truffle 
+npm install -g truffle
 ```
 
 > truflle is used for develop, test, and deploy smart contracts.
@@ -49,9 +49,12 @@ npm install -g truffle
 #### Quick Start
 
 ```javascripts
+git clone https://github.com/Polygon-Academy/starter-kits
+cd starter-kits
+npm install
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 cd {YOUR_PROJECT_NAME}
-npm run start 
+npm start
 ```
 
 ![npm start](https://cdn.rawgit.com/facebook/create-react-app/27b42ac/screencast.svg)
@@ -85,7 +88,7 @@ Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current fold
 ├── README.md
 ├── node_modules
 ├── package.json
-├── migrations 
+├── migrations
 ├── .gitignore
 ├── public
 │   ├── favicon.ico
@@ -128,7 +131,7 @@ Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current fold
 
 # Truffle Environment Configuration
 
-##### truffle-config.js  
+##### truffle-config.js
 
 ```javascripts
 const mnemonic = process.env.MNEMONIC;
@@ -139,7 +142,7 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1",
-      port: 8545,     
+      port: 8545,
       network_id: "*" // Match any network id
     },
     polygon: {
@@ -184,7 +187,7 @@ Polygon-Starter-Kit Project Template Introduction, and how to utilize different 
 ├── README.md
 ├── node_modules
 ├── package.json
-├── migrations 
+├── migrations
 ├── .gitignore
 ├── public
 │   ├── favicon.ico
