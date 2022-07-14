@@ -6,8 +6,6 @@ An Polygon Starter Kit Tutorial containing React, @web3-react, Alchemy.
 
 Install fundamental environments, including node, web3, react, truffle, etc
 
-\0. Environment Setup
-
 # Install Ganache、Truffle
 
 ![img](https://avatars.githubusercontent.com/u/88427645?s=200&v=4)
@@ -42,8 +40,6 @@ npm install -g truffle
 >
 > More tutorials about truffle: https://learnblockchain.cn/docs/truffle/
 
-\0. Environment Setup
-
 # Create your DAPP using Starter Kits Template
 
 #### Quick Start
@@ -53,6 +49,7 @@ npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 cd {YOUR_PROJECT_NAME}
 npm run start 
 ```
+note - if you are getting dependency issue then copy code from [here](https://github.com/Polygon-Academy/starter-kits/blob/main/template.json) to your package.json and use npm install
 
 ![npm start](https://cdn.rawgit.com/facebook/create-react-app/27b42ac/screencast.svg)
 
@@ -124,8 +121,6 @@ Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current fold
 └── truffle-config.js
 ```
 
-\0. Environment Setup
-
 # Truffle Environment Configuration
 
 ##### truffle-config.js  
@@ -169,14 +164,8 @@ POLYGON_MUMBAI_RPC = " {PUBLIC_POLYGON_MUMBAI_RPC} or https://rpc-mumbai.maticvi
 
 More about `PUBLIC_RPC` please reference on：[Development Docs](https://docs.matic.network/docs/develop/network-details/network)
 
-# 1.Project Structure
-
+# 1. Project Structure
 Polygon-Starter-Kit Project Template Introduction, and how to utilize different modules in it.
-
-1.Project Structure
-
-# Project Structure
-
 #### Polygon-Starter-Kit Project Structure is as below
 
 ```javascripts
