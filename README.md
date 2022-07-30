@@ -6,9 +6,7 @@ An Polygon Starter Kit Tutorial containing React, @web3-react, Alchemy.
 
 Install fundamental environments, including node, web3, react, truffle, etc
 
-\0. Environment Setup
-
-# Install Ganache、Truffle
+# Install Ganache & Truffle
 
 ![img](https://avatars.githubusercontent.com/u/88427645?s=200&v=4)
 
@@ -18,7 +16,7 @@ An Polygon Starter Kit Tutorial containing React, @web3-react, Alchemy.
 
 [Developer Docs](https://docs.matic.network/docs/develop/getting-started) - [A Polygon Starter Kit tutorial from Alchemy](https://docs.alchemy.com/alchemy/tutorials/how-to-code-and-deploy-a-polygon-smart-contract)
 
-#### Install ganache
+### Install Ganache
 
 ```javascripts
 Download Package from https://www.trufflesuite.com/ganache
@@ -30,23 +28,21 @@ Ganache Screenshot
 
 ------
 
-> granache is needed for dapp development on local blockchain, its capable of viewing txns informations, create workspace folder, deploy smart contracts and tracking its interface.
+> Ganache is needed for dapp development on local blockchain, its capable of viewing txns informations, create workspace folder, deploy smart contracts and tracking its interface.
 
-#### Install truffle
+### Install Truffle
 
 ```javascripts
 npm install -g truffle 
 ```
 
-> truflle is used for develop, test, and deploy smart contracts.
+> Truffle is used for develop, test, and deploy smart contracts.
 >
-> More tutorials about truffle: https://learnblockchain.cn/docs/truffle/
-
-\0. Environment Setup
+> More tutorials about Truffle: https://learnblockchain.cn/docs/truffle/
 
 # Create your DAPP using Starter Kits Template
 
-#### Quick Start
+### Quick Start
 
 ```javascripts
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
@@ -62,17 +58,15 @@ Then fireup your browser and go to `http://localhost:3000/` to check your applic
 
 When you are preparing to deploy your project to production settings, use `npm run build` to create a compressed bundle and deploy.
 
-#### Immediate Configuration
+### Immediate Configuration
 
 There is no need for you to install or configurate tools like Webpack or Babel. They comes pre-configurated and hiddened, therefore you are provided with the full environment pack where you only need to worry about coding part.
 
 Just create a project with the template, then you are good to go!
 
-#### Create Application
+### Create Application
 
 You will need to use Node that is higher or equal to version 6 on your local computer(on server you don't have to). There is nvm(macOS/Linux) or nvm-windows to help you eaily switch between different Node versions.
-
-Create a new application
 
 ```javascripts
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
@@ -124,11 +118,9 @@ Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current fold
 └── truffle-config.js
 ```
 
-\0. Environment Setup
-
 # Truffle Environment Configuration
 
-##### truffle-config.js  
+### truffle-config.js  
 
 ```javascripts
 const mnemonic = process.env.MNEMONIC;
@@ -173,11 +165,9 @@ More about `PUBLIC_RPC` please reference on：[Development Docs](https://docs.ma
 
 Polygon-Starter-Kit Project Template Introduction, and how to utilize different modules in it.
 
-1.Project Structure
-
 # Project Structure
 
-#### Polygon-Starter-Kit Project Structure is as below
+### Polygon-Starter-Kit Project Structure is as below
 
 ```javascripts
 {YOUR_PROJECT_NAME}
