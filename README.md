@@ -156,6 +156,8 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     }
+   }
+}    
 ```
 
 Create `.env` File under root folder
