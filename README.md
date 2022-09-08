@@ -20,7 +20,7 @@ An Polygon Starter Kit Tutorial containing React, @web3-react, Alchemy.
 
 #### Install ganache
 
-```javascripts
+```
 Download Package from https://www.trufflesuite.com/ganache
 ```
 
@@ -34,7 +34,7 @@ Ganache Screenshot
 
 #### Install truffle
 
-```javascripts
+```bash
 npm install -g truffle 
 ```
 
@@ -48,7 +48,7 @@ npm install -g truffle
 
 #### Quick Start
 
-```javascripts
+```bash
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 cd {YOUR_PROJECT_NAME}
 npm run start 
@@ -74,13 +74,13 @@ You will need to use Node that is higher or equal to version 6 on your local com
 
 Create a new application
 
-```javascripts
+```bash
 npx create-react-app {YOUR_PROJECT_NAME} --template polygon-starter-kit
 ```
 
 Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current folder location. The File structures under this new folder is as below:
 
-```javascripts
+```bash
 {YOUR_PROJECT_NAME}
 ├── README.md
 ├── node_modules
@@ -130,7 +130,7 @@ Then a new folder named `{YOUR_PROJECT_NAME}` will be created under current fold
 
 ##### truffle-config.js  
 
-```javascripts
+```javascript
 const mnemonic = process.env.MNEMONIC;
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
@@ -179,7 +179,7 @@ Polygon-Starter-Kit Project Template Introduction, and how to utilize different 
 
 #### Polygon-Starter-Kit Project Structure is as below
 
-```javascripts
+```bash
 {YOUR_PROJECT_NAME}
 ├── README.md
 ├── node_modules
