@@ -24,7 +24,7 @@ function App() {
       <Content>
         <Container text textAlign='center'>
           <Image centered size='tiny' src={iconDevx} style={{marginBottom:"2em"}}/>
-          <p>Create React Ethereum DApp on Polygon</p>
+          <p>Hello World</p>
           <p>Built by Deal ex Machina, soon with Next.js</p>
         </Container>
       </Content>
